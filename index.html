@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        body {
+            margin: 250px;
+            background-color: #ffffff;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <label for="pswd">Dawaj hasło albo wypierdalaj: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="LOL" onclick="checkPswd();" />
+</form>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "haslo";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+            window.location="main.php";
+        }
+        else{
+            alert("Ni chuja, złe hasło");
+        }
+    }
+</script>
+</body>
+</html>
